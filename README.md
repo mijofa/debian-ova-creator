@@ -11,7 +11,7 @@ The OVF file included into this script was taken from an Ubuntu OVA file.
 This script depends of wget and qemu-img packages that you may install using the following command:
 
 ```sh
-$ sudo apt install -y wget qemu-img
+sudo apt install -y wget qemu-img
 ```
 
 ## Usage
@@ -19,37 +19,37 @@ $ sudo apt install -y wget qemu-img
 Create a new directory:
 
 ```sh
-$  mkdir debian-ova
+ mkdir debian-ova
 ```
 
 Change directory:
 
 ```sh
-$  cd debian-ova
+ cd debian-ova
 ```
 
 Download this script:
 
 ```sh
-$  wget https://github.com/burbuja/debian-ova-creator/blob/master/debian-ova-creator.sh
+wget https://github.com/burbuja/debian-ova-creator/blob/master/debian-ova-creator.sh
 ```
 
 Edit it:
 
 ```sh
-$ nano debian-ova-creator.sh
+nano debian-ova-creator.sh
 ```
 
 Change the permissions:
 
 ```sh
-$ chmod +x debian-ova-creator.sh
+chmod +x debian-ova-creator.sh
 ```
 
 Execute it:
 
 ```sh
-$ ./debian-ova-creator.sh
+./debian-ova-creator.sh
 ```
 
 ## License
