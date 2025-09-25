@@ -90,6 +90,13 @@ cat <<EOF | tee $FILE_NAME.ovf > /dev/null
           ovf:value="IyEvYmluL3NoCmVjaG8gImhpIHdvcmxkIgo="
         -->
       </Property>
+      <Property ovf:key="network-config" ovf:type="string" ovf:userConfigurable="true" ovf:value="">
+          <Label>Encoded network-config</Label>
+          <Description>In order to fit into a xml attribute, this value is base64 encoded . It will be decoded, and then processed normally as network-config.</Description>
+          <!--  The Following represents 'network:\n  config: disabled'
+          ovf:value="bmV0d29yazoKICBjb25maWc6IGRpc2FibGVkCg=="
+        -->
+      </Property>
       <Property ovf:key="password" ovf:type="string" ovf:userConfigurable="true" ovf:value="">
           <Label>Default User's password</Label>
           <Description>If set, the default user's password will be set to this value to allow password based login.  The password will be good for only a single login.  If set to the string 'RANDOM' then a random password will be generated, and written to the console.</Description>
